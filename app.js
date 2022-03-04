@@ -16,9 +16,9 @@ app.get("/", function(req, res) {
 });
 
 app.post("/", function(req, res) {
-  var firstName = req.body.fName;
-  var lastName = req.body.sName;
-  var email = req.body.email;
+  const firstName = req.body.fName;
+  const lastName = req.body.sName;
+  const email = req.body.email;
 
   const data = {
     members: [{
@@ -51,11 +51,11 @@ app.post("/", function(req, res) {
     });
   });
 
-  request.write(jsonData);
+  // request.write(jsonData);
   request.end();
 
 
-  console.log(firstName, lastName, email);
+  // console.log(firstName, lastName, email);
 });
 
 app.post("/failure", function(req, res) {
