@@ -15,6 +15,7 @@ app.get("/", function(req, res) {
   res.sendFile(__dirname + "/signup.html");
 });
 
+// add a newsletter
 app.post("/", function(req, res) {
   const firstName = req.body.fName;
   const lastName = req.body.sName;
