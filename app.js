@@ -11,6 +11,7 @@ app.use(bodyParser.urlencoded({
 
 app.use(express.static("public"));
 
+// get signup page
 app.get("/", function(req, res) {
   res.sendFile(__dirname + "/signup.html");
 });
