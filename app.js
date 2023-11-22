@@ -42,6 +42,7 @@ app.post("/", function(req, res) {
     auth: "teo:3364cb536a656ad1e76d6d395cf67ab9-us14"
   }
 
+  //success or failure
   const request = https.request(url, options, function(response) {
     if (response.statusCode === 200) {
       res.sendFile(__dirname + "/success.html");
